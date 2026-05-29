@@ -25,7 +25,7 @@ A simple HTML form for travelers to share their travel style and feedback.
    ```bash
    git clone https://github.com/mariarostamii/travellers-voice.git
    
-2. Open index.html in your browser.
+2. Open `index.html` in your browser.
 
 ---
 
