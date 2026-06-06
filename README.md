@@ -2,7 +2,7 @@
 
 A simple HTML form for travelers to share their travel style and feedback.
 
-> Static HTML form (no CSS, no backend yet).
+> Static HTML form (no CSS, no backend yet) .
 پ
 ---
 
