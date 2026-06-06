@@ -4,17 +4,20 @@ A simple HTML form for travelers to share their travel style and feedback.
 
 > Static HTML form (no CSS, no backend yet).
 پ
+---
 
 ## Live Demo
 
  https://mariarostamii.github.io/Travellers-voice/
 
+---
 
 ## Files
 
 - `index.html` – main survey form
 - `README.md` – project info
 
+---
 
 ## How to Run
 
@@ -24,6 +27,7 @@ A simple HTML form for travelers to share their travel style and feedback.
    
 2. Open `index.html` in your browser.
 
+---
 
 ## Future Plans
 Add CSS to make it look better
