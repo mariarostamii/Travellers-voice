@@ -4,132 +4,180 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Traveller's Voice - Travel Survey</title>
+
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/form.css">
+  <link rel="stylesheet" href="styles/footer.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-  <header>
-    <h1>Traveller's Voice</h1>
-    <p>Thank you for helping us design better travel experiences</p>
-  </header>
+  <div class="survey-container">
+    
+    <header class="site-header">
+      <div class="header-container">
+        <h1 class="header-title">Traveller's Voice</h1>
+        <p class="header-subtitle">Thank you for helping us design better travel experiences</p>
+        <div class="header-accent"></div>
+      </div>
+    </header>
 
-  <main>
-    <form>
-      <!-- Personal Info -->
-      <label for="name">Name</label>
-      <input type="text" id="name" placeholder="Enter your name" required>
-      
-      <br>
+    <main>
+      <form>
 
-      <label for="Email">Email</label>
-      <input type="text" id="Email"  placeholder="Enter your Email" required>
+        <!-- Personal Info Section -->      
+        <section class="form-section">
+          <p class="section-title">personal info</p>
 
-      <br>
+          <div class="section-card">
+            <div class="personal-info-grid">
+              <div class="form-group">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" id="name" class="form-input" placeholder="Enter your name" required>
+              </div>
+          
+              <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email"  class="form-input" placeholder="Enter your Email" required>
+              </div>  
+              
+              <div class="form-group">
+                <label for="age" class="form-label">Age (optional)</label>
+                <input type="number" id="age" class="form-input" placeholder="Age">
+              </div>
+            </div>  
+          </div>
+        </section>
 
-      <label for="Age">Age(optional)</label>
-      <input type="number" id="Age"  placeholder="Age">
 
-      <br><br>
+        <!-- Travel Style Section -->
+        <section class="form-section">
+          <p class="section-title">your travel style</p>
 
-      <!-- Question 1 -->
-      <label for="role">Which option best describes your travel style?</label>
-      <br><br>
-      <select id="role">
-        <option disabled selected>Select travel style</option>
-        <option>Professional traveller (5+ trips/year)</option>
-        <option>Occasional traveller (2-4 trips/year)</option>
-        <option>Beginner (less than 2 trips/year)</option>
-        <option>Business traveller</option>
-      </select>
+          <div class="section-card">
+            <div class="form-group">
+              <label for="role" class="form-label">Which option best describes your travel style?</label>
+              <select id="role" class="form-input">
+                <option disabled selected>Select travel style</option>
+                <option>Professional traveller (5+ trips/year)</option>
+                <option>Occasional traveller (2-4 trips/year)</option>
+                <option>Beginner (less than 2 trips/year)</option>
+                <option>Business traveller</option>
+              </select>
+            </div>
 
-      <!-- Question 2 -->
-      <p>Would you recommend adventure travel to a friend?</p>
-      <label>
-        <input type="radio" name="recommend">Definitely
-      </label>
-      <label>
-        <input type="radio" name="recommend">Maybe 
-      </label>
-      <label>
-        <input type="radio" name="recommend">Not sure 
-      </label>
-      
-      <br><br>
+            <div class="divider-line"></div>
 
-      <!-- Question 3 -->
-      <label for="feature">What is your favorite travel destination type?</label>
-      <br><br>
-      <select id="feature">
-        <option disabled selected>Select an option</option>
-        <option>Nature & Mountains</option>
-        <option>Beach & Sea</option>
-        <option>Historical & Cultural Sites</option>
-        <option>Local Food & Cuisine</option>
-        <option>Shopping & City Tour</option>
-      </select>
+            <div class="form-group">
+              <p class="form-label">Would you recommend adventure travel to a friend?</p>
+              <div class="radio-group">
+                <label class="radio-option">
+                  <input type="radio" name="recommend">Definitely
+                </label>
+                <label class="radio-option">
+                  <input type="radio" name="recommend">Maybe 
+                </label>
+                <label class="radio-option">
+                  <input type="radio" name="recommend">Not sure 
+                </label>
+              </div>
+            </div>
+          </div>
+        </section>
+        
 
-      <!-- Question 4 -->
-      <p>What would you like to see improved? (Check all that apply)</p>
-      <label>
-        <input type="checkbox"> Transportation (Flights, Trains, Buses)
-      </label>
-      <br>
-      <label>
-        <input type="checkbox"> Accommodation (Hotels, Hostels)
-      </label>
-      <br>
-      <label>
-        <input type="checkbox"> Local Food & Restaurants
-      </label>
-      <br>
-      <label>
-        <input type="checkbox"> Activities & Tours
-      </label>
-      <br>
-      <label>
-        <input type="checkbox"> Cost & Budget Options
-      </label>
-      <br>
-      <label>
-        <input type="checkbox"> Safety & Security
-      </label>
-      <br>
-      <label>
-        <input type="checkbox"> Visa & Documentation
-      </label>
-      <br>
-      <label>
-        <input type="checkbox"> Language Support
-      </label>
-      <br>
-      <label>
-        <input type="checkbox"> Local Guides & Community
-      </label>
-      <br>
-      <label>
-        <input type="checkbox"> Travel Insurance
-      </label>
-      <br>
-      <label>
-        <input type="checkbox"> Eco-friendly & Sustainable Options
-      </label>
+        <!-- Preferences Section -->
+        <section class="form-section">
+          <p class="section-title">preferences</p>
 
-      <br><br>
+          <div class="section-card">
+            <div class="form-group">
+              <label for="feature" class="form-label">What is your favorite travel destination type?</label>
+              <select id="feature" class="form-input">
+                <option disabled selected>Select an option</option>
+                <option>Nature & Mountains</option>
+                <option>Beach & Sea</option>
+                <option>Historical & Cultural Sites</option>
+                <option>Local Food & Cuisine</option>
+                <option>Shopping & City Tour</option>
+              </select>
+            </div>
 
-      <!-- Question 5 -->
-      <label for="comments">Any comments or suggestions?</label>
-      <br>
-      <textarea id="comments" rows="5" cols="50" placeholder="Enter your comments here..."></textarea>
-      
-      <br><br>
+            <div class="divider-line"></div>
 
-      <!-- Submit Button -->
-       <button type="submit">Submit</button>
-    </form>
-  </main>
+            <div class="form-group">
+              <p class="form-label">What would you like to see improved? (Check all that apply)</p>
+              <div class="checkbox-grid">
+                <label class="checkbox-option">
+                  <input type="checkbox"> Transportation
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox"> Accommodation
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox"> Local Food & Restaurants
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox"> Activities & Tours
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox"> Cost & Budget Options
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox"> Safety & Security
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox"> Visa & Documentation
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox"> Language Support
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox"> Local Guides & Community
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox"> Travel Insurance
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox"> Eco-friendly Options
+                </label>
+              </div>
+            </div>
+          </div>
+        </section>
 
-  <footer>
-    <p>&copy; 2025 Traveller's Voice. All rights reserved.</p>
-  </footer>
-  
+        
+        <!-- Final Thoughts Section -->
+        <section class="form-section">
+          <p class="section-title">final thoughts</p>
+
+          <div class="section-card">
+            <div class="form-group">
+              <label for="comments" class="form-label">Any comments or suggestions?</label>
+              <textarea id="comments" class="form-textarea" rows="5" cols="50" placeholder="Enter your comments here..."></textarea>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Submit Button -->
+        <div class="form-actions">
+          <button type="submit" class="submit-button">Submit Survey</button>
+        </div>
+        
+      </form>
+    </main>
+
+    <footer class="site-footer">
+      <p class="footer-text">&copy; 2025 Traveller's Voice. All rights reserved.</p>
+    </footer>    
+
+  </div>
 </body>
 </html>
