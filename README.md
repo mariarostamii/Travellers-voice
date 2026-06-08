@@ -4,23 +4,20 @@ A beautifully designed, responsive travel survey form to collect feedback from t
 
 > Fully styled with modern CSS — no frameworks, no backend (yet).
 
-
-
+---
 
 ## Live Demo
 
 https://mariarostamii.github.io/Travellers-voice/
 
-
-
+---
 
 ## Files
 
 - `index.html` – main survey form
 - `README.md` – project info
 
-
-
+---
 
 ## Features
 
@@ -31,7 +28,7 @@ https://mariarostamii.github.io/Travellers-voice/
 - Smooth hover and focus effects
 - Organized CSS with modular file structure
 
-
+---
 
 ## Sections included
 
@@ -41,16 +38,14 @@ https://mariarostamii.github.io/Travellers-voice/
 4. **Final Thoughts** – Open-ended comments
 5. **Submit button** with interactive styling
 
-
-
+---
 
 ## Files
 
 - `index.html`
 - `styles/` (4 CSS files)
 
-
-
+---
 
 ## How to Run
 
@@ -60,15 +55,13 @@ https://mariarostamii.github.io/Travellers-voice/
    
 2. Open `index.html` in your browser.
 
-
-
+---
 
 ## Future Plans
 
 Add form validation with JavaScrip
 
-
-
+---
 
 ## Technologies used
 
@@ -76,7 +69,7 @@ Add form validation with JavaScrip
 - CSS3 (Flexbox, Grid, custom properties)
 - Google fonts
 
-
+---
 
 ##  Author
 
