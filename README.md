@@ -6,9 +6,11 @@ A beautifully designed, responsive travel survey form to collect feedback from t
 
 
 
+
 ## Live Demo
 
 https://mariarostamii.github.io/Travellers-voice/
+
 
 
 
@@ -16,6 +18,7 @@ https://mariarostamii.github.io/Travellers-voice/
 
 - `index.html` – main survey form
 - `README.md` – project info
+
 
 
 
@@ -29,6 +32,7 @@ https://mariarostamii.github.io/Travellers-voice/
 - Organized CSS with modular file structure
 
 
+
 ## Sections included
 
 1. **Personal Info** – Name, Email, Age (optional)
@@ -39,10 +43,12 @@ https://mariarostamii.github.io/Travellers-voice/
 
 
 
+
 ## Files
 
 - `index.html`
 - `styles/` (4 CSS files)
+
 
 
 
@@ -56,9 +62,11 @@ https://mariarostamii.github.io/Travellers-voice/
 
 
 
+
 ## Future Plans
 
 Add form validation with JavaScrip
+
 
 
 
