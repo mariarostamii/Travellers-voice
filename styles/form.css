@@ -1,0 +1,160 @@
+/*=== FORM ===*/
+main{
+  padding: 1.5rem 2.5rem;
+}
+
+
+/* Common Styles */
+.form-section{
+  margin-bottom: 2rem;
+}
+
+.section-title{
+  color: #E09F3E;
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.section-card{
+  padding: 1.5rem 1.8rem;
+  background-color: rgba(255, 243, 176, 0.04);
+  border: 0.5px solid rgba(224, 159, 62, 0.18);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-label{
+  color: rgba(255, 243, 176, 0.55);
+}
+
+.form-input{
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.7px;
+  padding: 0.65rem 0.9rem;
+  background-color: rgba(255, 243, 176, 0.05);
+  color: #FFF3B0;
+  border: 0.5px solid rgba(224, 159, 62, 0.2);
+  border-radius: 12px;
+  outline: none;
+}
+
+
+/* Personal Info Section */
+.personal-info-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+}
+
+.personal-info-grid .form-group {
+  margin-bottom: 0;
+}
+
+.form-input:focus {
+  border-color: #E09F3E;
+}
+
+
+/* Travel Style Section */
+.form-input option{
+  background: #540B0E;
+  color: #FFF3B0;  
+}
+
+.divider-line{
+  height: 1px;
+  width: 100%;
+  background-color: rgba(224, 159, 62, 0.18);
+  margin-bottom: 1rem;
+}
+
+.radio-group{
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.radio-option{
+  color: rgba(255, 243, 176, 0.75);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+
+/* Preferences Section */
+.checkbox-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  row-gap: 1rem;
+  margin-left: 1rem;
+}
+
+.checkbox-option{
+  color: rgba(255, 243, 176, 0.75);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+
+/* Final Thoughts Section */
+.form-textarea{
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.7px;
+  padding: 0.65rem 0.9rem;
+  background-color: rgba(255, 243, 176, 0.05);
+  color: #FFF3B0;
+  border: 0.5px solid rgba(224, 159, 62, 0.2);
+  border-radius: 12px;
+  outline: none;  
+}
+
+.form-textarea:focus{
+  border-color: #E09F3E;
+}
+
+
+/* Submit Button */
+.submit-button{
+  padding: 0.9rem;
+  width: 100%;
+  background-color: #9E2A2B;
+  color: #FFF3B0;
+  border: none;
+  border-radius: 8px;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: background-color 0.2s,
+              color 0.2s,
+              transform 0.2s;
+}
+
+.submit-button:hover{
+  background-color: #E09F3E;
+  color: #540B0E;
+}
+
+.submit-button:active{
+  transform: scale(0.99);
+}
